@@ -92,7 +92,7 @@
               <source url="https://cdn.cocoapods.org/"/>
           </config>
           <pods>
-              <pod name="Firebase/Core" spec="~> 6.28.1" />
+              <pod name="Firebase/Core" spec="~> 6.29.0" />
               <pod name="Firebase/Messaging" spec="~> 6.28.1" />
           </pods>
       </podspec>
