@@ -92,8 +92,8 @@
               <source url="https://cdn.cocoapods.org/"/>
           </config>
           <pods>
-              <pod name="Firebase" spec="~> 6.30" />
-              <pod name="FirebaseMessaging" spec="~> 4.6" />
+              <pod name="Firebase/Core" spec="~> 6.10" />
+              <pod name="Firebase/Messaging" spec="~> 4.6" />
           </pods>
       </podspec>
     <framework src="PushKit.framework"/>
