@@ -96,7 +96,6 @@
               <pod name="Firebase/Messaging" spec="~> 6.28.1" />
           </pods>
       </podspec>
-    <framework src="PushKit.framework"/>
   </platform>
   <platform name="windows">
     <hook type="after_plugin_install" src="hooks/windows/setToastCapable.js"/>
