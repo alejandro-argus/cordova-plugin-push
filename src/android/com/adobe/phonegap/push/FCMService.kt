@@ -18,6 +18,7 @@ import android.text.Spanned
 import android.util.Log
 import androidx.core.app.NotificationCompat
 import androidx.core.app.RemoteInput
+import androidx.core.text.HtmlCompat
 import com.adobe.phonegap.push.PushPlugin.Companion.isActive
 import com.adobe.phonegap.push.PushPlugin.Companion.isInForeground
 import com.adobe.phonegap.push.PushPlugin.Companion.sendExtras
@@ -1187,7 +1188,7 @@ class FCMService : FirebaseMessagingService() {
   }
 
   private fun fromHtml(source: String?): Spanned? {
-    return if (source != null) Html.fromHtml(source) else null
+    return if (source != null) HtmlCompat.fromHtml(source, HtmlCompat.FROM_HTML_MODE_LEGACY) else null
   }
 
   private fun isAvailableSender(from: String?): Boolean {
