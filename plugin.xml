@@ -15,7 +15,7 @@
   <engines>
     <engine name="cordova" version=">=10.0.0"/>
     <engine name="cordova-android" version=">=9.0.0"/>
-    <engine name="cordova-ios" version=">=6.0.0"/>
+    <!--<engine name="cordova-ios" version=">=6.0.0"/>-->
   </engines>
 
   <platform name="android">
@@ -93,7 +93,7 @@
     <hook type="after_prepare" src="hooks/browser/updateManifest.js"/>
   </platform>
 
- <platform name="ios">
+ <!--<platform name="ios">
     <preference name="IOS_FIREBASE_MESSAGING_VERSION" default="10.4.0"/>
 
     <config-file target="config.xml" parent="/*">
@@ -131,7 +131,7 @@
         <pod name="Firebase/Messaging" spec="$IOS_FIREBASE_MESSAGING_VERSION" />
       </pods>
     </podspec>
-  </platform>
+  </platform>-->
 
   <platform name="windows">
     <hook type="after_plugin_install" src="hooks/windows/setToastCapable.js"/>
